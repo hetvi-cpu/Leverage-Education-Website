@@ -1,0 +1,369 @@
+*
+{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:'kumbh sans',sans-serif;
+}
+
+/* NAV section */
+
+.nav
+{
+    background: rgb(2, 31, 58); 
+    position:sticky;
+    top:0;
+    z-index: 999;
+    height:50px; 
+    box-shadow:0px 0px 5px #fff;
+}
+.nav_container
+{
+    display:flex;
+    justify-content:space-between; 
+}
+.logo
+{
+    text-decoration:none;
+    color:white;
+    font-size:1.5rem;
+    font-family: cursive;
+    margin-left:20px;
+    display:inline-block;
+    justify-content:space-between;
+}
+.nav_link
+{
+    display:flex;
+    justify-content: space-between;
+    margin-right:20px;
+    margin-top:10px;
+}
+.nav_btn
+{
+    background-color:transparent;
+    border:1px groove white;
+    border-radius:5px;
+    padding:7px;
+}
+.nav_btn a{
+   color:#fff;
+   font-family:Arial, Helvetica, sans-serif;
+   text-decoration:none;
+}
+.nav_wp
+{
+    margin-left:7px;
+    margin-top:8px; 
+    background-color:white;
+    background-size: cover;
+}
+ @media screen and (max-width:420px)
+ {
+
+ }
+
+
+
+
+ /* MAIN section */
+
+ .main
+ {
+    
+    background: rgb(2, 31, 58); 
+    height:500px;
+    display:flex;
+    justify-content:space-between;
+ }
+.main_container
+{
+    display:grid;
+    justify-content:space-between;
+    margin-left:50px;
+    margin-top:50px;
+}
+.main_lev h1{
+    color:white;
+    font-size: 30pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main_lev h1 p
+{
+    color:rgb(14, 85, 216); 
+     
+}
+
+.main_info
+{
+    color:white;
+    font-size:14pt;
+    margin-left:5px;
+}
+
+.main_bookpage
+{
+    margin-top:10px;
+    z-index:1;
+}
+.table tr td input
+{
+    border-radius:10px;
+    width:160px;
+    height:30px;
+    padding:5px;
+}
+.book_btn
+{
+    margin-left:20px;
+}
+.btn{
+   background-color: blue;
+   border-radius:20px;
+   border-color:blue;
+   padding:15px;
+   color:#fff;
+   font-weight: bold;
+
+}
+#main_img
+{
+    height:400px;
+    margin-top:50px;
+    margin-right:60px;
+    width: 1000px;
+}
+
+
+@media screen and (max-width:420px)
+    {
+
+    }
+
+
+
+/* Reason section */
+.reason_sec
+{
+    background:white;
+    top:0;
+}
+.choose
+{
+    text-align:center;
+    margin-top:20px;
+}
+.reason_icon
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 50px;
+    row-gap: 20px;
+    width:100%;
+    margin-top:100px;
+}
+.reason_icon button
+{
+
+    background:rgb(208, 217, 233);
+    border-color:rgb(208, 217, 233);
+    border-radius:20PX;
+    width:80px;
+    height:50px;
+    margin-top:10px;
+}
+.reason_icon button I
+{
+    margin:20PX;
+}
+
+@media screen and (max-width:420px)
+{
+
+}
+
+
+/* University list section */
+
+.uni_list
+{
+    background-color:rgb(233, 226, 226);
+    margin-top:40px;
+}
+.uni_caption h3
+{
+    text-align: center;
+    padding-top:20px;
+}
+.uni_info
+{
+    margin-top:40px;
+    display:flex;
+    gap:40px;
+    margin:30px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    
+}
+.uni_info #uni
+{
+    background-color:white;
+    border-radius:15px;    
+    scroll-snap-align:start;
+    scroll-snap-stop:always;
+    flex:33% 33% 33%;
+}
+#uni img{
+   width:auto;
+   height:auto;
+   margin:20px;
+   border-bottom:1px;
+   border-bottom-color: rgb(183, 186, 188);
+   border-bottom-style:solid;  
+}
+.info
+{
+    margin-left:30px;
+}
+.name
+{
+    font-size: 20pt;
+    color:rgb(5, 5, 67);
+}
+.location
+{
+    color:grey;
+}
+.list{
+    font-size: 14pt;
+    color:rgb(24, 24, 26);
+    margin-bottom:30px;
+    padding-left: 20px;
+}
+.top
+{
+    padding-top: 10px;
+    color:dimgray;
+
+}
+.courses
+{
+    padding:20px;
+    font-size: 12pt;
+    color: midnightblue;
+}
+
+
+
+/*  Testmonials */
+
+.testmonials
+{
+    background-color: #fff;
+    margin-top:40px;
+}
+.testmonials_caption h3
+{
+    font-size:16pt;
+    text-align:center;
+    padding: 20px;
+}
+.testmonials_snap
+{
+    margin-top:40px;
+    display:flex;
+    justify-content: space-between;
+    gap:40px;
+    margin:30px;
+}
+.snap
+{
+    background:linear-gradient(to bottom,rgb(232, 231, 231) 25%,#8e8d8d 75%);
+    border-radius:20px; 
+    border-color: rgb(26, 26, 26);   
+    scroll-snap-align:start;
+    scroll-snap-stop:always;
+    padding-top:10px;
+}
+.snap img{
+    width:40%;
+    height:40%;
+    margin:20px;
+    border-radius:20%;
+}
+.person_info
+{
+  padding: 20px; 
+
+}
+.person_info p{
+    padding-top:20px;
+}
+
+
+.consulation
+{
+    background-color: dodgerblue;
+    color:white;
+    text-align: center;
+    padding:20px;
+}
+.consulation h3{
+    padding:20px;
+}
+.consulation p
+{
+   font-size: 14pt;
+   padding-left:150px;
+   padding-right:150px;
+
+}
+
+
+
+.why
+{
+    padding:40px;
+}
+.why_box
+{
+    display:flex;
+    justify-content: space-between;
+}
+.why_list
+{
+    padding-left:40px;
+    padding-top:15px;
+    font-size:14pt;
+}
+.why_list ul li{
+    padding-bottom:15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.offices
+{
+    
+    padding:30px;
+    background: rgb(2, 31, 58); 
+    color:white;
+}
+.offices_list
+{
+   padding-top:40px;
+   display:grid;
+   grid-template-columns:1fr 1fr 1fr 1fr;
+   row-gap:2em;
+}
+
+
+
+
+
+
+
+ 
+
+ 
